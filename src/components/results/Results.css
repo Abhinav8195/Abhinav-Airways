@@ -1,0 +1,88 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .flights-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .flight-card {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 0 30%; /* Responsive design for flight cards */
+    transition: transform 0.2s;
+  }
+  
+  .flight-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .flight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .flight-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e67e22; /* Price color */
+  }
+  
+  .flight-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .book-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width */
+  }
+  
+  .book-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .no-flights {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5em;
+    color: #d9534f; /* Error color */
+  }
+  
